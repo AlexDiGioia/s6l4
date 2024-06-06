@@ -47,6 +47,28 @@ $custom-border-widths:(
 
 $border-widths: map-merge($border-widths, $custom-border-widths );
 
+$EPICODE:(
+    epicode-1:#5726c3,
+    epicode-2:#8625a5,
+    epicode-3:#cb2376,
+);
+
+$theme-colors: map-merge($theme-colors, $EPICODE );
+
+$custom-grid-breakpoints:(
+    3xl:1600px,
+    4xl:1800px,
+);
+
+$grid-breakpoints: map-merge($grid-breakpoints, $custom-grid-breakpoints );
+
+$custom-container-max-widths:(
+    3xl:1520px,
+    4xl:1720px,
+);
+
+$container-max-widths: map-merge($container-max-widths , $custom-container-max-widths);
+
 // 5. Include remainder of required parts
 @import "../../bootstrap/scss/maps";
 @import "../../bootstrap/scss/mixins";
